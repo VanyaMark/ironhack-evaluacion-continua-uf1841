@@ -8,34 +8,79 @@
     <style>
         * {
             box-sizing: border-box;
+            padding: 0;
+            margin: 0;
         }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+        }
+        .card h2 {
+            color: white;
+
+            text-align: center;
+        }
+
+        .black-title {
+            background-color: black;
+        }
+
+        .purple-title {
+            background-color: #7574b6;
+        }
+
+        .description {
+            border: 1px solid #f0f0f1;
+            text-align: center;
+        }
+
+        .grey-background {
+            background-color: #f0f0f1;
+        }
+
+        .description a {
+            text-decoration: none;
+            color: white;
+            background-color: #7574b6;
+        }
+
+
     </style>
 </head>
 
 <body>
-    Básico
-    $ 9.99 / año
-    10GB de Almacenamiento
-    10 Correos Electrónicos
-    10 Dominios
-    1GB de Ancho de Banda
-    Registrarse
-    
-    Pro
-    $ 24.99 / año
-    25GB de Almacenamiento
-    25 Correos Electrónicos
-    25 Dominios
-    2GB de Ancho de Banda
-    Registrarse
-    
-    Premium
-    $ 49.99 / año
-    50GB de Almacenamiento
-    50 Correos Electrónicos
-    50 Dominios
-    5GB de Ancho de Banda
-    Registrarse
+    <div class="container">
+        <div class="card">
+            <h2 class="black-title">Básico</h2>
+            <div class="description grey-background">$ 9.99 / año</div>
+            <div class="description">10GB de Almacenamiento</div>
+            <div class="description">10 Correos Electrónicos</div>
+            <div class="description">10 Dominios</div>
+            <div class="description">1GB de Ancho de Banda</div>
+            <div class="description grey-background"><a href="">Registrarse</a></div>
+        </div>
+        
+        <div class="card">
+            <h2 class="purple-title">Pro</h2>
+            <div class="description grey-background">$ 24.99 / año</div>
+            <div class="description">25GB de Almacenamiento</div>
+            <div class="description">25 Correos Electrónicos</div>
+            <div class="description">25 Dominios</div>
+            <div class="description">2GB de Ancho de Banda</div>
+            <div class="description grey-background"><a href="">Registrarse</a></div>
+        </div>
+        
+        <div class="card">
+            <h2 class="black-title">Premium</h2>
+            <div class="description grey-background">$ 49.99 / año</div>
+            <div class="description">50GB de Almacenamiento</div>
+            <div class="description">50 Correos Electrónicos</div>
+            <div class="description">50 Dominios</div>
+            <div class="description">5GB de Ancho de Banda</div>
+            <div class="description grey-background"><a href="">Registrarse</a></div>
+        </div>
+    </div>
 </body>
 
 </html>
