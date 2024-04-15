@@ -5,3 +5,19 @@
 /* h1 {
     color: red;
 } */
+
+.published-date {
+    color: #F77D00;
+}
+
+body .bg-black {
+    background-color: rgba(132, 0, 197, 0.5);
+}
+
+.wysiwyg h4 {
+    text-align: center;
+}
+
+.logos-social-networks {
+    justify-content: center;
+}
