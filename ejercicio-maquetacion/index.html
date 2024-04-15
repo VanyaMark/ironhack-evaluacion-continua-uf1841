@@ -14,25 +14,49 @@
 
         .container {
             display: flex;
-            justify-content: space-around;
+            justify-content: flex-start;
+            gap: 1rem;
+            flex-wrap: wrap;
+            padding: 2rem;
         }
-        .card h2 {
-            color: white;
 
-            text-align: center;
+        .card {
+            width: 300px;
+        }
+
+        .card:hover {
+            box-shadow:  0 8px 12px 0 rgba(0,0,0,0.2);
+        }
+
+        .card-pro:hover {
+            box-shadow: 0 8px 12px 0 rgb(104,104,171, 0.8);
         }
 
         .black-title {
+            color: white;
             background-color: black;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
-        .purple-title {
-            background-color: #7574b6;
+        .pro-title {
+            color: white;
+            background-color: #6868AC;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .description {
             border: 1px solid #f0f0f1;
             text-align: center;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .grey-background {
@@ -42,7 +66,7 @@
         .description a {
             text-decoration: none;
             color: white;
-            background-color: #7574b6;
+            background-color: #6868AC;
         }
 
 
@@ -61,8 +85,8 @@
             <div class="description grey-background"><a href="">Registrarse</a></div>
         </div>
         
-        <div class="card">
-            <h2 class="purple-title">Pro</h2>
+        <div class="card card-pro">
+            <h2 class="pro-title">Pro</h2>
             <div class="description grey-background">$ 24.99 / año</div>
             <div class="description">25GB de Almacenamiento</div>
             <div class="description">25 Correos Electrónicos</div>
